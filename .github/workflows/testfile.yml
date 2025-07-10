@@ -32,6 +32,6 @@ jobs:
       shell: bash
 
 
-    - name: Deploy metadata to Ankit
+    - name: Deploy metadata to Ankit_SB
       run: |
-        sfdx force:source:deploy -u ankit_SB -p force-app --json --loglevel fatal
+        sfdx force:source:deploy -u ankitdeployment-changes-second-step_SB -p force-app --json --loglevel fatal
