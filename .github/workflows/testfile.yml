@@ -26,12 +26,12 @@ jobs:
           sfdx force:org:list
       shell: bash
 
-    - name: Validate metadata deployment to ankit_SB
+    - name: Validate metadata deployment
       run: |
         sfdx force:source:deploy -u ankit_SB -p force-app --checkonly --json --loglevel fatal
       shell: bash
 
 
-    - name: Deploy metadata to Ankit_SB
+    - name: Deploy metadata
       run: |
         sfdx force:source:deploy -u ankitdeployment-changes-second-step_SB -p force-app --json --loglevel fatal
